@@ -25,7 +25,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'mvn test'
+                sh 'mvn -Dmaven.repo.local=$MAVEN_LOCAL_REPO test'
             }
             post {
                 always {
