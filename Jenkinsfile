@@ -6,6 +6,10 @@ pipeline {
         }
     }
 
+    options {
+        skipStagesAfterUnstable()
+    }
+
     environment {
         MAVEN_LOCAL_REPO = '/tmp/maven-repo'
     }
