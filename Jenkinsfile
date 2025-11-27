@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        MAVEN_LOCAL_REPO = '/maven-repo'
+        MAVEN_LOCAL_REPO = '/tmp/maven-repo'
     }
 
     stages {
